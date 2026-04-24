@@ -1,0 +1,6 @@
+sudo apt update
+sudo apt install steghide
+nano secret.txt
+steghide embed -cf 1.jpg -ef secret.txt
+steghide extract -sf 1.jpg
+cat secret.txt
